@@ -4,17 +4,17 @@ Liftni boshqarish uchun yaratilgan .NET Core Web API loyihasi. Tizim foydalanuvc
 
 Loyihaning Tuzilishi
 
-### Lift.API/
-🧠├── Controllers/                // API endpointlar
-🧠├── Data/                       // Kontekst va konfiguratsiyalar
--├── Models/                     // Ma'lumotlar bazasi modellari
--├── Services/                   // Lift mantiqiy servisi
--├── Migrations/                 // EF Core migratsiyalar
--├── Program.cs                  // Dastur boshlanishi
--├── appsettings.json            // Sozlamalar
--└── Dockerfile                  // API uchun Docker fayli
+```Lift.API/
+ ├── Controllers/                // API endpointlar
+ ├── Data/                       // Kontekst va konfiguratsiyalar
+ ├── Models/                     // Ma'lumotlar bazasi modellari
+ ├── Services/                   // Lift mantiqiy servisi
+ ├── Migrations/                 // EF Core migratsiyalar
+ ├── Program.cs                  // Dastur boshlanishi
+ ├── appsettings.json            // Sozlamalar
+ └── Dockerfile                  // API uchun Docker fayli
 
-docker-compose.yml             // Tizimni ishga tushuruvchi fayl
+docker-compose.yml             // Tizimni ishga tushuruvchi fayl ```
 
 
  📌 Funksionallik
