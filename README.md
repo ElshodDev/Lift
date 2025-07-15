@@ -4,7 +4,7 @@ Liftni boshqarish uchun yaratilgan .NET Core Web API loyihasi. Tizim foydalanuvc
 
 Loyihaning Tuzilishi
 
-Lift.API/
+### Lift.API/
 ├── Controllers/                // API endpointlar
 ├── Data/                       // Kontekst va konfiguratsiyalar
 ├── Models/                     // Ma'lumotlar bazasi modellari
