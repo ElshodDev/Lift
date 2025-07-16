@@ -14,7 +14,7 @@ Loyihaning Tuzilishi
  ├── appsettings.json            // Sozlamalar
  └── Dockerfile                  // API uchun Docker fayli
 
-docker-compose.yml             // Tizimni ishga tushuruvchi fayl ```
+docker-compose.yml             // Tizimni ishga tushuruvchi fayl 
 
 
  📌 Funksionallik
