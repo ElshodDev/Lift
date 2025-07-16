@@ -73,7 +73,7 @@ git clone https://github.com/ElshodDev/Lift.git
 cd LIFT
 docker-compose up --build
 
-```Swagger UI
+Swagger UI
 http://localhost:8085/swagger  -->API
 http://localhost:5051/browser  -->pgadmin4
 
