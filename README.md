@@ -68,14 +68,17 @@ docker-compose.yml             // Tizimni ishga tushuruvchi fayl
 
 ## ▶️ Ishga tushirish (Docker bilan)
 
-`bash
+```bash
 git clone https://github.com/ElshodDev/Lift.git
 cd LIFT
-docker-compose up --build
+docker-compose up --build```
 
-Swagger UI
-http://localhost:8085/swagger  -->API
-http://localhost:5051/browser  -->pgadmin4
+
+### 🌐 havolalar
+
+- [Swagger UI – API test qilish](http://localhost:8085/swagger)
+- [pgAdmin4 – Ma’lumotlar bazasini ko‘rish](http://localhost:5051/browser)
+
 
 📧 Email: admin@lift.com
 🔐 Parol: mypassword
