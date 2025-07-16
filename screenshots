@@ -3,7 +3,7 @@
 ## 📸 Skrinshotlar
 
 ### 1. 🐳 Docker konteynerlar ishga tushgan
-`docker compose up` orqali barcha servislar muvaffaqiyatli ishga tushirilgan:
+`docker compose up` orqali barcha servislar muvaffaqiyatli ishga tushdi:
 
 ![Docker Working](screenshots/docker-running.png)
 
