@@ -68,7 +68,7 @@ docker-compose.yml             // Tizimni ishga tushuruvchi fayl ```
 
 ## ▶️ Ishga tushirish (Docker bilan)
 
-```bash
+`bash
 git clone https://github.com/ElshodDev/Lift.git
 cd LIFT
 docker-compose up --build
