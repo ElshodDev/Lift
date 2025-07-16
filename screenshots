@@ -1,0 +1,43 @@
+---
+
+## 📸 Skrinshotlar
+
+### 1. 🐳 Docker konteynerlar ishga tushgan
+`docker compose up` orqali barcha servislar muvaffaqiyatli ishga tushirilgan:
+
+![Docker Working](screenshots/docker-running.png)
+
+---
+
+### 2. 🧪 Swagger UI – API test qilish uchun interfeys
+`localhost:8085/swagger` orqali barcha endpointlar test qilinmoqda:
+
+![Swagger UI](screenshots/swagger-ui.png)
+
+---
+
+### 3. 📍 Joriy lift holatini olish (`GET /status`)
+Lift hozir qaysi qavatda va qanday yo‘nalishda harakatda ekanini ko‘rsatadi:
+
+![Status Endpoint](screenshots/status-endpoint.png)
+
+---
+
+### 4. 📤 So‘rov yuborish (`POST /request/{floor}`)
+Foydalanuvchi qavatga chaqiriq yuborgan vaqtdagi javob holati:
+
+![POST Request](screenshots/request-post.png)
+
+---
+
+### 5. 📥 So‘rovlar ro‘yxati (`GET /requests`)
+Navbatda turgan barcha chaqiriqlar ro‘yxati ko‘rsatilmoqda:
+
+![Requests List](screenshots/requests-list.png)
+
+---
+
+### 6. 🗃 PostgreSQL (pgAdmin4)
+Ma'lumotlar bazasi jadvallari (`ElevatorStatuses`, `ElevatorRequests`) pgAdmin4 orqali ko‘rsatilmoqda:
+
+![pgAdmin Tables](screenshots/pgadmin-tables.png)
