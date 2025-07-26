@@ -1,0 +1,6 @@
+@Lift.API_HostAddress = http://localhost:5118
+
+GET {{Lift.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
