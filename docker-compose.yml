@@ -1,0 +1,54 @@
+
+services:
+  lift.api:
+    image: ${DOCKER_REGISTRY-}liftapi
+    build:
+      context: .
+      dockerfile: Lift.API/Dockerfile
+    ports:
+      - "8086:8080"
+    depends_on:
+      lift_db:
+        condition: service_healthy
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=lift_db;Port=5432;Database=LIFTDB;Username=postgres;Password=mypassword
+    networks:
+      - lift-network
+
+  lift_db:
+    image: postgres:16
+    container_name: lift_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: LIFTDB
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    networks:
+      - lift-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@lift.com
+      PGADMIN_DEFAULT_PASSWORD: mypassword
+    ports:
+      - "5052:80"
+    depends_on:
+      - lift_db
+    networks:
+      - lift-network
+
+volumes:
+  pgdata:
+
+networks:
+  lift-network:
