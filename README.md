@@ -2,6 +2,8 @@
 
 Bu loyiha oddiy lift tizimini yaratishga qaratilgan bo‘lib, u foydalanuvchi so‘rovlarini qabul qiladi, ularni bajaradi va joriy holatini PostgreSQL ma'lumotlar bazasida saqlaydi.
 
+Managing upward and downward directions
+
 ##  Vazifa Tavsifi
 
 Lift:
